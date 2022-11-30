@@ -1,0 +1,139 @@
+package Question1.methods_in_java.java_methods;
+
+import java.util.Scanner;
+
+public class Methods {
+    public static void main(String[] args) {
+
+     double num_1, num_2, num_3, smallestNumber, largestNumber;
+        Scanner input = new Scanner(System.in);
+
+ System.out.println("\nEnter the first number: ");
+  num_1 = input.nextInt(); 
+ System.out.println("Enter the second number: ");
+  num_2 = input.nextInt(); 
+ System.out.println("Enter the third number: ");
+  num_3 = input.nextInt(); 
+
+   smallestNumber = findSmallestNumber(num_1, num_2, num_3);
+   largestNumber = findLargestNumber(num_1, num_2, num_3);
+
+ System.out.println("\nThe smallest number: " + smallestNumber);
+   System.out.println("The largest number: " + largestNumber);
+     System.out.println(largestNumber + " is your largest and " + smallestNumber + " is the smallest number.");
+    }
+
+ static double findSmallestNumber(double firstNumber, double secondNumber, double thirdNumber) {
+
+     if (firstNumber < secondNumber) 
+            {
+         if (firstNumber < thirdNumber) 
+            {
+            return firstNumber;
+            } 
+            else 
+            {
+            return thirdNumber;
+            }
+            else 
+            {
+         if (secondNumber < thirdNumber) 
+            {
+            return secondNumber;
+            }
+            else 
+           {
+            return thirdNumber;
+            }
+        }
+    }
+
+ static double findLargestNumber(double firstNumber, double secondNumber, double thirdNumber) {
+
+      if (firstNumber > secondNumber) 
+         {
+          if (firstNumber > thirdNumber) 
+             {
+             return firstNumber;
+             } 
+             else 
+             {
+             return thirdNumber;
+         }
+            } 
+            else 
+            {
+       if (secondNumber > thirdNumber) 
+          {
+           return secondNumber;
+            } 
+            else 
+            {
+            return thirdNumber;
+            }
+        }
+    }
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+package Question2;
+
+import java.util.Scanner;
+
+public class GenerateAverage {
+
+public static void main(String[] args) {
+
+ Scanner input = new Scanner(System.in);
+ double marksForJava, marksForNetworking, marksForMath, averageMark;
+
+      
+ System.out.println("Enter marks for Networking: ");
+   marksForNetworking = input.nextInt(); 
+ System.out.println("Enter marks for marksFor Java Programming: ");
+   marksFor Java Programming = input.nextInt();         
+ System.out.println("Enter marks for Maths: ");
+   marksForMath = input.nextInt(); 
+        
+   averageMark = (marksForNetworking + marksForJava Programming + marksForMath) / 3; 
+
+        System.out.println("\nMarks for Networking is: "+ marksForNetworking);
+         System.out.println("Marks for marksForJava Programming: "+ marksForJava Programming);
+          System.out.println("Marks for Maths: "+ marksForMath);
+
+    System.out.println("\nThe averageMark is: " + averageMark);
+    }
+
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+package Question4;
+
+public class Question4 {
+
+void printGreeting(String wordA, String sentence_two) 
+ {
+  System.out.println(wordA + sentence_two);
+    }
+
+public static void main(String[] args) 
+ {
+  String sentence_one, sentence_two;
+        sentence_one = "I Love Java ";
+         sentence_two = findWord2();
+
+        
+        Question4 myClass = new Question4();
+        myClass.printGreeting(sentence_one, sentence_two);
+    }
+
+  static String findWord2() 
+    {
+        String wordTwo = "Programming Language.";
+        return wordTwo;
+    }
+
+}
+
+------------------------------------------------------------------END OF TASK ONE PART TWO------------------------------------------------------------------------
